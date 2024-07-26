@@ -1,0 +1,73 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "EB Garamond", Helvetica, serif;
+}
+
+p,
+a {
+  font-family: "Montserrat", sans-serif;
+}
+
+.bg-pale-ochre {
+  background-color: rgb(247, 245, 241);
+}
+
+.bg-dark-ochre {
+  background-color: rgb(143, 36, 24);
+}
+
+.text-red-ochre {
+  color: rgb(146, 25, 14);
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(101 100 69 / 23%);
+
+  pointer-events: none;
+  mix-blend-mode: color-dodge;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.icon-colour {
+  color: rgb(180, 105, 95);
+}
+
+.map-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
